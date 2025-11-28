@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Предложить персонажа — Sigma Aura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Предложить персонажа</h1>
+        <p>Поделитесь своим вариантом сигма-персонажа и ауры</p>
+    </header>
+
+    <main class="form-page">
+        <form id="suggestForm">
+            <label for="name">Имя персонажа:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="type">Тип сигма:</label>
+            <select id="type" name="type" required>
+                <option value="">Выберите тип</option>
+                <option value="Альфа Сигма">Альфа Сигма</option>
+                <option value="Одинокий Волк">Одинокий Волк</option>
+                <option value="Загадочный Сигма">Загадочный Сигма</option>
+            </select>
+
+            <label>
+                <input type="checkbox" id="consent" required>
+                Вы сигма?
+            </label>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </main>
+
+    <script src="sigmaCharacter.js"></script>
+</body>
+</html>
