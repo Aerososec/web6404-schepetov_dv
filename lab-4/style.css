@@ -84,6 +84,7 @@ main {
     flex: 1;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .flex-image img {
@@ -95,7 +96,7 @@ main {
 
 .grid-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     gap: 20px;
     align-items: center;
     margin-bottom: 30px;
@@ -228,4 +229,149 @@ button {
 
 button:hover {
     background-color: var(--link-hover);
+}
+
+
+
+
+.page {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+
+.header {
+    background-color: var(--header-bg);
+    color: var(--table-header-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.header__title {
+    margin: 0;
+}
+
+
+.header__subtitle {
+    margin: 10px 0 0 0;
+}
+
+
+.nav {
+    background-color: var(--nav-bg);
+    padding: 10px;
+}
+
+
+.nav__list {
+    list-style: none;
+    text-align: center;
+}
+
+
+.nav__item {
+    display: inline-block;
+}
+
+
+.nav__link {
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+.nav__link:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+
+.main {
+    padding: 20px;
+    max-width: 900px;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+}
+
+
+.content-section {
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+
+.content-section__title {
+    color: var(--header-bg);
+    margin-bottom: 15px;
+}
+
+
+.content-section__text {
+    margin-bottom: 20px;
+}
+
+
+.content-section__highlight {
+    color: var(--link-color);
+}
+
+
+.content-section__figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.content-section__image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    animation: fancyFadeZoomPulse 3s ease-in-out 1.2s infinite;
+}
+
+
+.content-section__caption {
+    font-style: italic;
+    color: var(--caption-color);
+    margin-top: 10px;
+}
+
+
+.traits-section {
+    padding: 20px;
+    background-color: var(--accent-bg);
+    border-radius: 8px;
+}
+
+
+.traits-section__title {
+    color: var(--header-bg);
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+
+.traits-section__list {
+    padding-left: 20px;
+}
+
+.traits-section__item {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+
+.nav__link--active {
+    color: var(--link-hover);
+    border-bottom: 2px solid var(--link-hover);
+}
+
+
+.content-section--featured {
+    background-color: var(--accent-bg);
+    border-left: 4px solid var(--link-color);
+    padding-left: 25px;
 }
