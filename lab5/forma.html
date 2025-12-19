@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Предложить персонажа — Sigma Aura</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hint {
+            font-size: 0.8em;
+            margin-top: 5px;
+            min-height: 20px;
+            color: #666;
+        }
+        
+        .hint.valid {
+            color: green;
+        }
+        
+        .hint.error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Предложить персонажа</h1>
+        <p>Поделитесь своим вариантом сигма-персонажа и ауры</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="alpha.html">Альфа Сигма</a></li>
+            <li><a href="lonewolf.html">Одинокий Волк</a></li>
+            <li><a href="mysterious.html">Загадочный Сигма</a></li>
+        </ul>
+    </nav>
+
+    <main class="form-page">
+        <form id="suggestForm">
+            <label for="name">Имя персонажа:</label>
+            <input type="text" id="name" name="name" required>
+            <div id="nameHint" class="hint"></div>
+
+            <label for="description">Почему он сигма?</label>
+            <input type="text" id="description" name="description" required>
+            <div id="descriptionHint" class="hint"></div>
+
+            <label for="type">Тип сигма:</label>
+            <select id="type" name="type" required>
+                <option value="">Выберите тип</option>
+                <option value="Альфа Сигма">Альфа Сигма</option>
+                <option value="Одинокий Волк">Одинокий Волк</option>
+                <option value="Загадочный Сигма">Загадочный Сигма</option>
+            </select>
+            <div id="typeHint" class="hint"></div>
+
+            <label>
+                <input type="checkbox" id="consent" required>
+                Вы сигма?
+            </label>
+            <div id="consentHint" class="hint"></div>
+
+            <button type="submit">Отправить</button>
+            
+            <div id="result" class="hint"></div>
+        </form>
+
+        <section class="characters-section">
+        <h2>Персонажи с сервера</h2>
+        <p class="update-info" id="lastUpdate">
+            Автоматическое обновление каждые 5 минут...
+        </p>
+        
+        <div id="charactersTable" class="table-container">
+            <p>Загрузка данных с сервера...</p>
+        </div>
+    </section>
+
+    </main>
+
+    
+    <script src="sigmaCharacter.js"></script>
+</body>
+</html>
