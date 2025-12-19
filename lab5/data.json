@@ -1,0 +1,28 @@
+{
+  "/sigma-characters": {
+    "get": {
+      "data": [
+        {
+          "id": 1,
+          "name": "Джон Уик",
+          "type": "Одинокий Волк",
+          "description": "Тихий, но смертельно опасный",
+          "consent": true
+        },
+        {
+          "id": 2,
+          "name": "Джеймс Бонд", 
+          "type": "Альфа Сигма",
+          "description": "Харизматичный лидер",
+          "consent": true
+        }
+      ]
+    },
+    "post": {
+      "data": {
+        "message": "Персонаж добавлен",
+        "success": true
+      }
+    }
+  }
+}
